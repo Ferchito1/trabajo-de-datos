@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Fernando Llancce">
+	<meta name="Keywords" content="Galeria ,HTML% ,CSS3">
+	<meta name="Description" content="Las mejor galeria de fotos e imagenes">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Formulario</title>
+
+	<style>
+
+	*{font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;}
+	.form{
+		background-image: url(img2.jpg);
+	}
+	table {width: 420px;}
+	td{padding: 10px;}
+	fieldset{padding: 10px; border: 1px solid #ccc;width: 420px;margin: 0 auto;}
+
+	legend{text-align: right;font-size: italic;font-size: 20px; font-weight: bold;color:#999;}
+
+	input[type=text], input[type=email], textarea{padding:5px; font-size: 18px; border: 1px solid #ccc; width: 300px;} 
+
+	</style>
+</head>
+<body class="form" >
+	
+	<main>
+		<section>
+			<!-- form:post>fieldset>legend{Datos personales}+table>tr>td[aling=right]{nombre:}+td>input[name=nombre required autofocus]^^tr>td[aling=right]{Email:}+td>input:email[name=correo required]^^tr>td[aling=right]{Movil:}+td>input[name=movil requiered pattern title]^^tr>td[aling=right valing=top]{Mensaje}+td>textarea[name=mensaje rows=4 required]^^tr>td+td>input:image[src=img/btn_enviar.png alt="Enviar Datos"] -->
+			
+
+
+			<form action="" method="post">
+				<fieldset>
+					<legend>Datos personales</legend>
+					<table>
+						<tr>
+							<td aling="right">Nombre:</td>
+							<td><input type="text" name="Nombre" ></td>
+						</tr>
+						<tr>
+							<td aling="right">Email:</td>
+							<td><input type="email" name="correo" id="" required=""></td>
+						</tr>
+						<tr>
+							<td aling="right">Movil:</td>
+							<td><input type="text" name="movil" requiered="" pattern="[\d]{3}\s[\d]{3}\s[\d]{3}$" title="Escribir un numero telefonico con los espacios ejemplo 984 677 769"></td>
+						</tr>
+						<tr>
+							<td aling="right" valing="top">Mensaje</td>
+							<td><textarea name="mensaje" id="" cols="30" rows="4" required=""></textarea></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="image" src="img/des.png" alt="Enviar Datos"></td>
+						</tr>
+					</table>
+				</fieldset>
+			</form>
+		</section>
+	</main>
+
+</body>
+</html>
